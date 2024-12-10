@@ -45,7 +45,7 @@ CXXFLAGS := $(CFLAGS)
 LDFLAGS := -L../../lib -L/usr/local/lib
 
 ifeq ($(PLATFORM),miyoomini)
-CFLAGS := $(CFLAGS) -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7ve -Wl,-rpath=$(LIB)
+CFLAGS := $(CFLAGS) -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7a -Wl,-rpath=$(LIB)
 
 ifdef INCLUDE_SHMVAR
 LDFLAGS := $(LDFLAGS) -lshmvar
