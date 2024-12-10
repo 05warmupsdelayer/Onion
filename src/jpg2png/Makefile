@@ -1,5 +1,5 @@
 CROSS_COMPILE ?= /opt/miyoomini/bin/arm-linux-gnueabihf-
-ARCH = -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7ve+simd
+ARCH = -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7-a
 
 TARGET = jpg2png
 
